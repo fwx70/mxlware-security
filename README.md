@@ -1,4 +1,4 @@
-# Enhanced Discord Bot - Complete Documentation
+# mxlware security - Complete Documentation
 
 ## 🤖 Features
 
@@ -71,7 +71,7 @@
 
 ### Step 1: Clone or Extract the Repository
 ```bash
-cd /path/to/fw70
+cd /path/to/mxlware-security
 ```
 
 ### Step 2: Install Dependencies
@@ -84,7 +84,7 @@ pip install -r requirements.txt
 2. Edit `.env` with your bot details:
 ```env
 DISCORD_TOKEN=your_bot_token_here
-COMMAND_PREFIX=!
+COMMAND_PREFIX=,
 OWNER_ID=your_discord_user_id
 ```
 
@@ -102,7 +102,7 @@ python -m nodemon main.py  # if nodemon is installed
 ## 📋 Project Structure
 
 ```
-fw70/
+mxlware-security/
 ├── main.py                    # Entry point
 ├── config.py                  # Configuration settings
 ├── requirements.txt           # Python dependencies
@@ -208,7 +208,7 @@ The bot uses SQLite with the following tables:
 
 ### Commands not responding
 - Make sure bot has Send Messages permission
-- Check if command prefix is correct (default: `!`)
+- Check if command prefix is correct (Default: `,`)
 - Verify bot has required permissions for the command
 
 ### Anti-nuke not working
@@ -271,6 +271,7 @@ Planned features:
 
 ---
 
+**Project**: mxlware security
 **Version**: 2.0 Enhanced
 **Last Updated**: 2026-08-30
 **Status**: Production Ready

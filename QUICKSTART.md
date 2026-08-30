@@ -73,27 +73,27 @@ Both protection systems log to the main bot log: `logs/bot.log`
 ## Common Commands
 
 ### For Admins
-- `!help` - Show all commands
-- `!warn @user reason` - Warn a user
-- `!kick @user reason` - Kick a user
-- `!ban @user reason` - Ban a user
-- `!mute @user reason` - Mute a user
-- `!unmute @user` - Unmute a user
-- `!purge 10` - Delete last 10 messages
+- `,help` - Show all commands
+- `,warn @user reason` - Warn a user
+- `,kick @user reason` - Kick a user
+- `,ban @user reason` - Ban a user
+- `,mute @user reason` - Mute a user
+- `,unmute @user` - Unmute a user
+- `,purge 10` - Delete last 10 messages
 
 ### For Everyone
-- `!ping` - Check bot latency
-- `!userinfo @user` - Get user info
-- `!serverinfo` - Get server info
-- `!joke` - Random joke
-- `!8ball question?` - Ask magic 8-ball
-- `!dice` - Roll a dice
-- `!flip` - Flip a coin
+- `,ping` - Check bot latency
+- `,userinfo @user` - Get user info
+- `,serverinfo` - Get server info
+- `,joke` - Random joke
+- `,8ball question?` - Ask magic 8-ball
+- `,dice` - Roll a dice
+- `,flip` - Flip a coin
 
 ### For Bot Owner
-- `!stats` - Show bot statistics
-- `!antinuke enable/disable` - Toggle anti-nuke
-- `!antiself enable/disable` - Toggle anti-self-bot
+- `,stats` - Show bot statistics
+- `,antinuke enable/disable` - Toggle anti-nuke
+- `,antiself enable/disable` - Toggle anti-self-bot
 - `!reload moderator` - Reload a command category
 
 ## Troubleshooting
@@ -110,7 +110,7 @@ Both protection systems log to the main bot log: `logs/bot.log`
 
 ### "Command not working"
 - Make sure bot has Send Messages permission
-- Check command prefix is `!`
+- Check command prefix is `,`
 - Verify you have required permissions
 
 ### "Anti-nuke not detecting actions"

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Enhanced Discord Bot with Anti-Nuke and Anti-Self-Bot Protection
+mxlware security - Anti-Nuke and Anti-Self-Bot Protection
 Main entry point for the bot
 """
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Enhanced setup script for the Discord Bot
-Run this once to set up the bot properly with auto-setup for anti-nuke and anti-self-bot
+mxlware security - setup script
+Run this once to set up mxlware security with auto-setup for anti-nuke and anti-self-bot
 """
 
 import os
@@ -151,7 +151,7 @@ LOG_FILE=logs/bot.log
 def main():
     """Run setup"""
     print("\n" + "="*50)
-    print("Discord Bot - Auto Setup Script")
+    print("mxlware security - Auto Setup Script")
     print("="*50 + "\n")
     
     logger.info("Starting bot setup...")
