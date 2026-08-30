@@ -5,8 +5,8 @@ from datetime import timedelta
 from discord.ext import commands
 
 
-class MxlwareCog(commands.Cog):
-    """mxlware-inspired command set with extended admin/moderation features."""
+class SecurityCog(commands.Cog):
+    """Security and moderation command set (generic)."""
 
     def __init__(self, bot):
         self.bot = bot
@@ -69,7 +69,7 @@ class MxlwareCog(commands.Cog):
                 if channel is not None:
                     return channel
         for channel in guild.text_channels:
-            if channel.name.lower() in {"bot-logs", "modlog", "admin-log", "guild-log", "mxlware-log"}:
+            if channel.name.lower() in {"bot-logs", "modlog", "admin-log", "guild-log"}:
                 return channel
         return None
 
@@ -375,15 +375,15 @@ class MxlwareCog(commands.Cog):
         await ctx.send(embed=embed)
 
     @commands.command(name="instagram", help="Show the official Instagram link")
-    async def instagram(self, ctx, *, handle: str = "mxlware"):
+    async def instagram(self, ctx, *, handle: str = "server"):
         await ctx.send(f"https://instagram.com/{handle}")
 
-    @commands.command(name="tiktok", help="Show the official TikTok link")
-    async def tiktok(self, ctx, *, handle: str = "mxlware"):
+    @commands.command(name="tiktok", help="Show the TikTok link")
+    async def tiktok(self, ctx, *, handle: str = "server"):
         await ctx.send(f"https://tiktok.com/@{handle}")
 
-    @commands.command(name="youtube", help="Show the official YouTube link")
-    async def youtube(self, ctx, *, query: str = "mxlware"):
+    @commands.command(name="youtube", help="Show the YouTube search link")
+    async def youtube(self, ctx, *, query: str = "server"):
         await ctx.send(f"https://www.youtube.com/results?search_query={query.replace(' ', '+')}")
 
     @commands.command(name="joinvc", help="Join the author voice channel")
@@ -505,4 +505,4 @@ class MxlwareCog(commands.Cog):
 
 
 async def setup(bot):
-    await bot.add_cog(MxlwareCog(bot))
+    await bot.add_cog(SecurityCog(bot))
